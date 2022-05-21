@@ -1,0 +1,667 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+@font-face {
+    font-family: PoppMed;
+    src: url(./font/Poppins-Medium.otf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./font/Poppins-SemiBold.otf);
+}
+
+@font-face {
+    font-family: PoppReg;
+    src: url(./font/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: Playfair;
+    src: url(./font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+.header{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo img{
+    width: 65px;
+    height: 65px;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+ul{
+    margin-right: 10px;
+    list-style: none;
+}
+
+.header > ul{
+    display: flex;
+}
+
+
+.header ul li a{
+    padding: 20px;
+    display: block;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+.acc{
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+}
+
+.acc li{
+    background-color: #FF8A00;
+}
+
+.acc li a:hover{
+    color:black;
+}
+
+.header > ul > li > a:hover{
+    color: #FF8A00;
+}
+
+.header  ul  li:hover .acc{
+    display: block;
+    z-index: 100;
+}
+
+.slideshow{
+    height: 700px;
+    width: 1360px;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.collection{
+    width: 1360px;
+    display: flex;
+    position: relative;
+}
+
+.slide-img{
+    width: 1360px;
+    height: 600px;
+}
+
+#prev, #next{
+    font-size: 200%;
+    border: none;
+    outline: none;
+    background-color: none;
+    color: black;
+    /* position: absolute; */
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.arrow{
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow p{
+    font-family: PoppReg;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#next{
+    float: right;
+    /* margin-right: 5%; */
+}
+
+.contents{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.contents h1{
+    font-family: PoppMed;
+    text-align: center;
+    font-size: 36px;
+    padding: 40px;
+}
+
+.img-3 .content a img{
+    width: 379px;
+    height: 412px;
+}
+
+.img-3 .content{
+    padding: 5px;
+    margin: 10px 16px;
+}
+
+.img-2 .content{
+    padding: 8px;
+    margin: 10px 16px;
+}
+
+.content h3{
+    font-size: 20px;
+    color: black;
+}
+
+.content p{
+    font-size: 16px;
+    color: black;
+}
+
+.prodAvail{
+    margin-bottom: 30px;
+}
+
+.img-3, .img-2{
+    font-family: PoppMed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-2 .content a img{
+    width: 585px;
+    height: 550px;
+}
+
+.faq p{
+    font-family: Playfair;
+    font-weight: bold;
+    font-size: 65px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.faq img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.quest{
+    height: 75vh;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.faq{
+    height: 140px;
+    margin: 20px;
+}
+
+.quest p{
+    text-align: center;
+}
+
+#ya{
+    font-family: Poppins;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+#no{
+    font-family: PoppReg;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer span{
+    font-family: PoppMed;
+    font-size: 18px;
+    color: #FF8A00;
+}
+
+.all{
+    min-height: 90vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.allShoes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shoes{
+    /* padding: 50px; */
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+h3{
+    font-family: PoppMed;
+}
+
+.shoes p{
+    font-family: PoppMed;
+    font-size: 18px;
+}
+
+.shoes a img{
+    width: 300px;
+    height: 300px;
+}
+
+.acces{
+    min-height: 90vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.tit{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.tit2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tit2 p{
+    font-family: PoppMed;
+    font-size: 18px;
+}
+
+.tit p{
+    font-family: Poppins;
+    font-size: 30px;
+    color: #FF8A00;
+ 
+}
+
+.basketItem a img{
+    width: 300px;
+    height: 300px;
+}
+
+
+.basketItem{
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+
+.jerseyItem{
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.jerseyItem a img{
+    width: 290px;
+    height: 380px;
+}
+
+
+.jacketItem{
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.jacketItem a img{
+    width: 283px;
+    height: 300px;
+}
+
+.kneeItem{
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.kneeItem a img{
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 1507px)
+{
+    .slideshow{
+        /* height: 700px; */
+        width: 1200px;
+        align-content: center;
+    }
+    
+    .collection{
+        width: 1200px;
+    }
+
+    .slide-img{
+        max-width: 1200px;
+        height: auto;
+    }
+
+    .contents{
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (max-width: 1300px)
+{
+    .slideshow{
+        /* height: 700px; */
+        width: 1000px;
+        align-content: center;
+    }
+    
+    .collection{
+        width: 1000px;
+    }
+
+    .slide-img{
+        max-width: 1000px;
+        height: auto;
+    }
+
+    .contents{
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width: 1100px)
+{
+    .slideshow{
+        /* height: 700px; */
+        width: 800px;
+        align-content: center;
+    }
+    
+    .collection{
+        width: 800px;
+    }
+
+    .slide-img{
+        max-width: 800px;
+        height: auto;
+    }
+
+    .contents{
+        margin-top: -270px;
+    }
+}
+
+@media only screen and (max-width: 870px)
+{
+    .slideshow{
+        width: 600px;
+    }
+    
+    .collection{
+        width: 600px;
+    }
+
+    .slide-img{
+        max-width: 600px;
+        height: auto;
+    }
+
+    .contents{
+        margin-top: -370px;
+    }
+
+    .contents h1{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 660px)
+{
+    .slideshow{
+        width: 450px;
+    }
+    
+    .collection{
+        width: 450px;
+    }
+
+    .slide-img{
+        max-width: 450px;
+        height: auto;
+    }
+
+    .contents{
+        margin-top: -430px;
+    }
+}
+
+@media only screen and (max-width: 700px)
+{
+    .header, .header > ul{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .logo img{
+        margin: 0;
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .header ul li a{
+        font-family: PoppReg;
+        font-size: 8px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #prev, #next{
+        font-size: 10px;
+    }
+
+    .arrow p{
+        font-size: 10px;
+    }
+
+    .contents{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contents h1{
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .img-2 .content a img, .img-3 .content a img{
+        width: 279px;
+        height: 312px;
+    }
+
+    .img-2, .img-3{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .allShoes, .tit2{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .shoes a img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .basketItem a img, .jerseyItem a img, .jacketItem a img, .kneeItem a img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .tit p{
+        font-size: 20px;
+    }
+
+    .content h3, h3{
+        font-size: 14px;
+    }
+
+    .content p, .tit2 p, .shoes p{
+        font-size: 12px;
+    }
+
+    .faq{
+        height: 50px;
+        margin: 20px;
+    }
+
+    .faq p{
+        font-size: 24px;
+    }
+
+    .faq img{
+        width: 60px;
+    }
+
+    #ya{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    
+    #no{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer span{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .slideshow{
+        width: 330px;
+        margin-top: 0;
+    }
+    
+    .collection{
+        width: 330px;
+    }
+
+    .slide-img{
+        max-width: 330px;
+        height: auto;
+    }
+
+    .contents{
+        margin-top: -500px;
+    }    
+
+    #prev, #next{
+        font-size: 10px;
+    }
+
+    .arrow p{
+        font-size: 6px;
+    }
+
+    .contents h1{
+        font-size: 12px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .img-2 .content a img, .img-3 .content a img{
+        width: 179px;
+        height: 212px;
+    }
+
+    .shoes a img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .basketItem a img, .jerseyItem a img, .jacketItem a img, .kneeItem a img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .tit p{
+        font-size: 12px;
+        margin: -10px;
+    }
+
+    .content h3, h3{
+        font-size: 12px;
+    }
+
+    .content p, .tit2 p, .shoes p{
+        font-size: 10px;
+    }
+
+    .faq img{
+        width: 60px;
+    }
+
+    #ya{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    
+    #no{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer span{
+        font-size: 8px;
+        font-family: PoppReg;
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (max-width: 320px)
+{
+    .slideshow{
+        width: 240px;
+    }
+    
+    .collection{
+        width: 240px;
+    }
+
+    .slide-img{
+        max-width: 240px;
+        height: auto;
+    }
+
+    .contents{
+        margin-top: -550px;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG 5 EP - Purchase Product</title>
+    <link rel="stylesheet" href="../Prod.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../image/logo hoops4.png" alt="logo hoops universe">
+        </div>
+
+        <ul>
+            <li>
+                <a href="../home.html">Home</a>
+            </li>
+            <li>
+                <a href="../shoes.html">Shoes</a>
+            </li>
+            <li>
+                <a href="../accesories.html">Accesories</a>
+                <ul class="acc">
+                    <li><a href="../basket.html">Basketball</a></li>
+                    <li><a href="../jersey.html">Jersey</a></li>
+                    <li><a href="../jacket.html">Jacket</a></li>
+                    <li><a href="../knee.html">Knee Support</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../faq.html">FAQ</a>
+            </li>
+        </ul>  
+    </div>
+
+    <div class="pDetail">
+        <p class="pDTitle">Product Detail</p>
+        <div class="pDetailUp">
+            <img src = "./images/PG5.jpg" alt="PG 5 EP">
+            <div class = "pDetailUpTitle">
+                <p id="prodName">PG 5 EP</p>
+                <br>
+                <p id="prodPrice">Rp 1.649.000</p>
+                <br>
+                <form name="pSize" class="pSize">
+                    <select id="sizeSelect" name="sizeSlc" required>
+                        <option value="">Pick Size</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </form>
+                <br>
+                <p class="pDetailUpPar">Paul George has an effortlessly smooth, 
+                    reliably steady game. He takes his time, but he's always 
+                    well-positioned to make the extra pass, cut through the lane, 
+                    or nail a pull-up jumper. The PG 5 EP combines the agile low-top 
+                    profile Paul likes with flexible Nike Air Dot Weld Strobel cushioning. 
+                    The full-length Air unit is stitched directly to the upper, bringing the plush, 
+                    bouncy cushioning right up under the foot—perfect for keeping PG feeling 
+                    like he's moving on clouds. This EP version uses an extra-durable outsole that's ideal for outdoor courts.</p>
+                <div>
+                    <label id="sizeError"></label>
+                </div>
+                <button id="buyBtn">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="purchaseForm" id="purchaseForm">
+        <p class="pFTitle">Purchase Form</p>
+        <div class="pFormUp">
+            <form class = "purchaseForm2" name="purchaseForm2">
+                <div class="purchaseForm2div">
+                    <label>Name</label>
+                    <input type="text" name="inpname" id="inputName" placeholder="John Doe">
+                </div>
+                <div class="purchaseForm2div">
+                    <label>Phone Number</label>
+                    <input type="text" name="inpPN" id="inputPN" placeholder="081234567890">
+                </div>
+                <div class="purchaseForm2div">
+                    <label>Email</label>
+                    <input type="email" name="inpemail" id="inputEmail" placeholder="abc@mail.com">
+                </div>
+                <div class= "purchaseForm2Gender">
+                    <label>Gender</label>
+                    <input type="radio" name="inputGender" id="genderMale" value="Male">
+                    <label for="genderMale" id="labelGender">Male</label>
+                    <input type="radio" name="inputGender" id="genderFemale" value="Female">
+                    <label for="genderFemale" id="labelGender">Female</label>
+                    <input type="radio" name="inputGender" id="genderOther" value="Other">
+                    <label for="genderOther" id="labelGender">Other</label>
+                    <input type="radio" name="inputGender" id="genderOther2" value="Prefer not to say">
+                    <label for="genderOther2" id="labelGender">Prefer not to say</label>
+                </div>
+                <div class="purchaseForm2div">
+                    <label>Age</label>
+                    <input type="text" name="inpage" id="inputAge" placeholder="20">
+                </div>
+                <div class="purchaseForm2div">
+                    <label>District</label>
+                    <input type="text" name="inpdistrict" id="inputDistrict" placeholder="Pagedangan">
+                </div>
+                <div class="purchaseForm2div">
+                    <label>Address</label>
+                    <input type="text" name="inpaddress" id="inputAddress" placeholder="Jl. Sevilla no.25">
+                </div>
+                <div class="purchaseForm2div">
+                    <label>Postal Code</label>
+                    <input type="text" name="inppc" id="inputPC" placeholder="15310">
+                </div>
+                <div class="purchaseForm2div">
+                    <label>Additional Note</label>
+                    <input type="text" name="inpnote" id="inputAN" placeholder="Please write 'Happy Birthday!' Thank you">
+                </div>
+                <br>
+                <div>
+                    <label id="errorMsg"></label>
+                </div>
+                <div class="purchaseForm2div">
+                    <input type="submit" value="Submit" id="submitBtn">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <span>
+            &copy; 2021. All Rights Reserved.
+        </span>
+    </footer>
+
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+    <script src="../Prod.js"></script>
+</body>
+</html>
